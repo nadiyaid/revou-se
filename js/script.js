@@ -1,4 +1,4 @@
-/////////////// Welcoming speech ///////////////
+/////////////// Welcoming speech ///////////////  
 // var nama = prompt("What's your name?");
 // document.getElementById("nama").innerText = nama;
 
