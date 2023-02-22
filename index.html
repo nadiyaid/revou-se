@@ -37,29 +37,42 @@
                         <a class="nav-link" href="profile.html">Our Profile</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">Potofolio</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#message">Message Us</a>
                     </li>
                 </ul>
             </div>
-          </nav>
+        </nav>
+        <!-- <nav>
+            <div class="container header-wrapper">
+                <img src="assets/Logo Transparent.png" alt="Logo" width="50">
+                <div class="menu">
+                    <a href="index.html">Home</a>
+                    <a href="profile.html">Our Profile</a>
+                    <a href="#message">Message Us</a>
+                </div>
+            </div>
+        </nav> -->
     </header>
 
     <main>
         <section id="hero">
             <div class="container">
                 <div class="hero">
-                    <p class="hero-subtitle">Hi <span id="nama"></span></p>
+                    <p class="hero-subtitle"><span id="nama"></span></p>
                     <p class="hero-subtitle">Welcome to our website</p>
                     <div class="hero-title">
                         <h1>Wedding Organizer</h1>
                         <h5>Modern &bullet; Affordable &bullet; Trustworthy</h5>
                     </div>
-                    
                     <!-- <img src="assets/hero.jpg" alt="hero image" class="hero-img"> -->
                 </div>
+                <script>
+                    var person = prompt("Please enter your name", "Nadiya");
+                    if (person != null) {
+                        document.getElementById("nama").innerHTML =
+                        "Hi " + person + "!";
+                    }
+                </script>
             </div>
         </section>
 
@@ -92,25 +105,25 @@
                         <h2 class="message-title">Message Us</h2>
                         <form class="message-form" name="message-form" onsubmit="return validateForm()">
                             <div class="input-group">
-                                <label class="label">Nama</label> : &ThinSpace;
-                                <input type="text" name="name" placeholder="Nama">
+                                <label class="label">Name</label> : &ThinSpace;
+                                <input type="text" name="name" placeholder="Your name">
                             </div>
                             <div class="input-group">
-                                <label class="label">Tanggal Lahir</label> : &ThinSpace;
+                                <label class="label">Date of Birth</label> : &ThinSpace;
                                 <input type="date" name="date">
                             </div>
                             <div class="input-group">
-                                <label class="label">Jenis Kelamin</label>: &ThinSpace;
+                                <label class="label">Gender</label>: &ThinSpace;
                                 <div class="textbox">
-                                    <input type="radio" name="gender" id="male" value="Laki-laki">
-                                    <label class="label" for="male">Laki-laki</label>
-                                    <input type="radio" name="gender" id="female" value="Perempuan">
-                                    <label class="label" for="female">Perempuan</label>
+                                    <input type="radio" name="gender" id="male" value="Male">
+                                    <label class="label" for="male">Male</label>
+                                    <input type="radio" name="gender" id="female" value="Female">
+                                    <label class="label" for="female">Female</label>
                                 </div>
                             </div>
                             <div class="input-group">
-                                <label class="label">Pesan</label> : &ThinSpace;
-                                <textarea name="message" cols="30" rows="3" placeholder="Pesan"></textarea>
+                                <label class="label">Message</label> : &ThinSpace;
+                                <textarea name="message" cols="30" rows="3" placeholder="Type your message..."></textarea>
                             </div>
                             <input type="submit" value="Submit" class="submit">
                         </form>
@@ -122,19 +135,19 @@
                                 <p class="textbox" id="dt"></p>
                             </div>
                             <div class="input-group">
-                                <p class="label"><b>Nama</b></p>: &ThinSpace;
+                                <p class="label"><b>Name</b></p>: &ThinSpace;
                                 <p class="textbox" id="output-name"></p>
                             </div>
                             <div class="input-group">
-                                <p class="label"><b>Tanggal Lahir</b></p>: &ThinSpace;
+                                <p class="label"><b>Date of Birth</b></p>: &ThinSpace;
                                 <p class="textbox" id="output-date"></p>
                             </div>
                             <div class="input-group">
-                                <p class="label"><b>Jenis Kelamin</b></p>: &ThinSpace;
+                                <p class="label"><b>Gender</b></p>: &ThinSpace;
                                 <p class="textbox" id="output-gender"></p>
                             </div>
                             <div class="input-group">
-                                <p class="label"><b>Pesan</b></p>: &ThinSpace;
+                                <p class="label"><b>Message</b></p>: &ThinSpace;
                                 <p class="textbox" id="output-message"></p>
                             </div>
                         </div>
@@ -147,7 +160,8 @@
     <footer>
         <div class="container">
             <div class="footer">
-                <p class="footer-p">Revou</p>
+                <p class="footer-p">&copy; 2023 Nadiya</p>
+                <p class="footer-logo"><img src="assets/Revou Logo.png" alt="" width="40"></p>
             </div>
         </div>
     </footer>
