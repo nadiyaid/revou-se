@@ -35,10 +35,7 @@
                         <a class="nav-link" href="profile.html">Our Profile</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">Potofolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#message">Message Us</a>
+                        <a class="nav-link" href="index.html#message">Message Us</a>
                     </li>
                 </ul>
             </div>
@@ -64,31 +61,34 @@
                         showDivs(slideIndex);
 
                         function plusDivs(n) {
-                            showDivs(slideIndex += n);
+                        showDivs(slideIndex += n);
                         }
 
                         function showDivs(n) {
-                            var i;
-                            var imgList = document.getElementsByClassName('about-img');
-                            
-                            if (n > imgList.length) slideIndex=1;
-                            else if (n < 1) slideIndex=imgList.length;
+                        var i;
+                        var imgList = document.getElementsByClassName("about-img");
+                        if (n > imgList.length) slideIndex = 1;
+                        else if (n < 1) slideIndex = imgList.length;
 
-                            for (i = 0; i < imgList.length; i++) {
-                                imgList[i].style.display = 'none';
-                            }
-
-                            imgList[slideIndex - 1].style.display = 'block';
-
-                            // setInterval(() => {
-                            //     plusDivs(1);
-                            // }, 2000)
+                        for (i = 0; i < imgList.length; i++) {
+                            imgList[i].style.display = "none";
                         }
+
+                        imgList[slideIndex - 1].style.display = "block";
+                        }
+
+                        setInterval(() => {
+                            plusDivs(1);
+                        }, 2000);
+                        
                     </script>
 
-                    <h5 class="about-desc text-center">
-                        We are a team with creative people that help our clients<b> make their dream wedding come true</b>. We plan, excecute, organize, and document your beautiful wedding. Based in Jakarta since 2017 with more than 500+ clients and 100+ teams. We have our trustworthy partners such as Swiss-bell Hotel, Mai Accent Jewelry, Invitee, Atelier Versace, and many more.
-                    </h5>
+                    <p class="about-desc">
+                        A premier wedding planning and coordination service dedicated to making your big day unforgettable. With years of experience in the industry, our team of expert wedding planners have helped countless couples bring their dream wedding to life.
+                    </p>
+                    <p class="about-desc">    
+                        At Wedding Organizer, we understand that every couple is unique, and we work closely with our clients to create personalized wedding experiences that reflect their individual styles and preferences. Whether you're looking for a grand, extravagant affair or an intimate, romantic celebration, we'll help you craft the perfect wedding day that you and your guests will cherish for a lifetime. With our trustworthy partners such as Swiss-bell Hotel, Mai Accent Jewelry, Invitee, Atelier Versace, and many more, we'll <b>make your dream wedding come true</b>
+                    </p>
                 </div>
             </div>
         </section>
@@ -96,12 +96,59 @@
             <div class="container">
                 <div class="value">
                     <h3 class="value-title">Our Core Values</h3>
-                    
+                    <div class="value-modern">
+                        <img src="https://img.icons8.com/external-parzival-1997-outline-color-parzival-1997/200/null/external-modern-digital-globalization-parzival-1997-outline-color-parzival-1997.png"/>
+                        <div class="desc">
+                            <h3>Modern</h3>
+                            <p>We stay up to date about wedding decoration and keep it modern</p>
+                        </div>
+                    </div>
+                    <div class="value-affordable">
+                        <div class="desc">
+                            <h3>Affordable</h3>
+                            <p>Although with our luxurious vendor and concept, it is affordable to any people </p>
+                        </div>
+                        <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/200/null/external-affordable-cleaning-flaticons-lineal-color-flat-icons-2.png"/>
+                    </div>
+                    <div class="value-modern">
+                        <img src="https://img.icons8.com/bubbles/200/null/handshake.png"/>
+                        <div class="desc">
+                            <h3>Trustworthy</h3>
+                            <p>Able to be relied on as honest and truthful. Can be proven by the presence of more than 100 clients</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="visi-misi">
+            <div class="container">
+                <h3 class="visi-title">Our Vision and Mission</h3>
+                <div class="vm-content">
+                    <div class="vision">
+                        <h4><b>Vision</b></h4>
+                        <p>Create unforgettable, personalized wedding experiences that exceed our clients' expectations.</p>
+                    </div>
+                    <div class="mission">
+                        <h4><b>Mission</b></h4>
+                        <li>Work closely with our clients to understand their unique style, preferences, and vision for their wedding day.</li>
+                        <li>Offer a comprehensive range of services that cater to every aspect of wedding planning, from venue selection to vendor management, decor, and logistics.</li>
+                        <li>Committed to providing exceptional service, creative solutions, and flawless execution</li>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer></footer>
+
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <p class="footer-p">&copy; 2023 Nadiya</p>
+                <p class="footer-logo"><img src="assets/Revou Logo.png" alt="" width="40"></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
         integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
