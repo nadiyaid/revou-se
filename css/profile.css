@@ -61,7 +61,7 @@ h1, h2, h3 {
 
 
 section {
-    padding: 3rem 0;
+    padding: 2rem 0;
 }
 
 .btn-top {
@@ -138,10 +138,79 @@ header {
 }
 
 .about-desc {
-    padding: 2rem 4rem;
+    /* padding: 2rem; */
     line-height: 2rem;
 }
 
-#value {
+.value {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
+.value-modern {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+.value-affordable {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5rem;
+    text-align: end;
+}
+
+.visi-title {
+    margin-bottom: 1rem;
+}
+
+.vm-content {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.vision {
+    background-color: bisque;
+    padding: 1rem 5rem;
+    flex: 6;
+}
+.mission {
+    background-color: lavender;
+    padding: 1rem 5rem;
+    flex: 6;
+}
+
+.mission > li {
+    text-align: start;
+}
+
+footer {
+	background: #efcfca;
+	padding: 5px;
+	/* font-size: 20px;
+	font-weight: 600; */
+}
+
+.footer {
+	display: flex;
+}
+.footer-logo {
+	margin-left: auto;
+}
+
+.footer-p {
+	margin-top: auto;
+}
+
+@media only screen and (max-width: 600px) {
+	.vm-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .vision, .mission {
+        padding: 1rem 1rem;
+    }
 }
