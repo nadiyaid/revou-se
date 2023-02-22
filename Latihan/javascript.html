@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar {
+    border: solid;
+    color: yellow;
+    margin: 6px;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    }
+    .navbut{
+        color: yellowgreen;
+        margin: 0 5px;
+        border: solid;
+        border-color: yellowgreen;
+        background-color: green;
+        width: 80px;
+        padding: 10px 0;
+        text-align: center;
+    }
+    .logo{
+        margin-right: auto;
+    }
+    header{
+        margin: 20px;
+    }
+    .input-group {
+        display: flex;
+        margin-bottom: 1rem;
+    }
+    .konten{
+        display: flex;
+        margin: 20px;
+    }
+    .message-form {
+        margin-right: 20px;
+        width: 1000px;             
+    }
+    input[type="text"], input[type="date"], textarea {
+        width: 90%;
+        border: 2px solid lightgray;
+        border-radius: .3rem;
+        padding: .3rem;
+    }
+    input[type="button"] {
+        width: 97%; /* panjang button submit */
+        }
+    .input-form{
+        border: 3px solid black;
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <img src="https://storage.googleapis.com/danacita-website-v3-prd/website_v3/images/Revou-alasan.original.png" class="logo" width="40" height="40" alt="">
+        <div class="navbut">Home</div>
+        <div class="navbut">Search</div>
+        <div class="navbut">Logout</div>   
+    </nav>
+    <header>
+        <h1>Message Us</h1>
+    </header>
+    <main class="konten">           
+        <div class="form-section">     
+            <form class="message-form" name="message-form" onsubmit="return validateForm()">
+                Nama:
+                <input placeholder="Nama" type="text" name="full-name" />
+                <br />
+                Tanggal Lahir:
+                <input type="date" name="birth-date" />
+                <br />
+                Jenis Kelamin:
+                <input type="radio" id="male" name="gender" value="Laki-laki" />
+                <label for="male">Laki-Laki</label>
+                <input type="radio" id="female" name="gender" value="Perempuan" />
+                <label for="female">Perempuan</label>
+                <br />
+                Pesan:
+                <textarea placeholder="Pesan" name="messages"></textarea>
+                <br />
+                <br />
+                <input type="submit" value="Sumbit" />
+            </form>
+
+            <div class="output-form">
+                <p>Nama: <span id="sender-full-name"> </span></p>
+                <p>Tanggal Lahir: <span id="sender-birth-date"> </span></p>
+                <p>Jenis Kelamin: <span id="sender-gender"> </span></p>
+                <p>Pesan: <span id="sender-messages"> </span></p>
+            </div>
+
+            <script>
+                function validateForm() {
+                    var name =document.forms["message-form"]["full-name"].value;
+                    var date =document.forms["message-form"]["birth-date"].value;
+                    var gender =document.forms["message-form"]["gender"].value;
+                    var messages =document.forms["message-form"]["messages"].value; 
+
+                    document.getElementById("sender-full-name").innerText=name;
+                    document.getElementById("sender-birth-date").innerText=date;
+                    document.getElementById("sender-gender").innerText=gender;
+                    document.getElementById("sender-messages").innerText=messages;
+
+                    // return false;
+                    
+                    // console.log({name, date, gender, messages});
+                    
+                    if (name == "" || date == "" || gender == "" || messages ==""){
+                        alert("Tidak boleh ada yang kosong");
+                        return;
+                    }
+                    
+                    return false;
+                }
+            </script>
+        </div>
+        
+    </main>
+</body>
+</html>
