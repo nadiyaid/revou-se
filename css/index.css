@@ -1,0 +1,272 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:wght@300,400,500,600,700,800%7COpen+Sans:400,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Roboto:wght@300;400;500&display=swap');
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	scroll-behavior: smooth;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	font-family: "Poppins";
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+h1, h2, h3 {
+	font-family: "Gloock";
+}
+
+a {
+	text-decoration: none !important;
+}
+.img-round {
+    border-radius: 100%;
+	max-width: 100%;
+  	height: auto;
+}
+
+.btn-top {
+	position: fixed;
+	background: #efcfca;
+	padding: .5rem .8rem;
+	border-radius: 5px;
+	bottom: 10px;
+	right: 10px;
+	/* visibility: hidden; */
+	/* opacity: 0; */
+	z-index: 10000;
+	color: inherit;
+	/* transition: .5s; */
+}
+.btn-top.active {
+	visibility: visible;
+	opacity: 1;
+}
+.btn-top:focus {
+	outline: none;
+	box-shadow: none;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+	margin: auto;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: #efcfca;
+	z-index: 1;
+}
+
+/* NAVBAR */
+.nav-item {
+	padding: 10px;
+	text-align: center;
+	/* background-color: rosybrown; */
+	margin-left: 10px;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+.nav-link {
+	/* color: white !important; */
+}
+
+#hero {
+	margin-top: 80px;
+	background: url(../assets/Hero.png) center / cover;
+	height: 100vh;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 40px;
+	z-index: 1000;
+}
+
+.hero-title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: white;
+	padding: 6rem 0;
+	margin-bottom: 0px;
+}
+.hero-title>h1 {
+	font-size: 50px;
+}
+
+.hero-subtitle {
+	font-size: larger;
+	line-height: 1rem;
+}
+.hero-subtitle > span#nama {
+	text-decoration: underline;
+	font-weight: 600;
+}
+
+.hero-img {
+	width: 1100px;
+	height: 100%;
+}
+
+.hero-line {
+	border: 3px solid black;
+}
+
+.head {
+	display: flex;
+	flex-direction: column;
+	padding: 40px;
+}
+
+.headquarter-title {
+	font-weight: 800;
+}
+
+.headquarter-gallery {
+	padding-top: 30px;
+	display: flex;
+	justify-content: space-evenly;
+	text-align: center;
+}
+
+.city > img {
+	border-radius: 100%;
+	max-width: 100%;
+  	height: auto;
+	margin-bottom: 10px;
+}
+
+.message {
+	display: flex;
+	padding: 40px;
+	justify-content: space-evenly;
+	align-items: center;
+	gap: 100px;
+}
+
+.message-title {
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+.message-input {
+	flex: 6;
+}
+
+.message-output {
+	flex: 6;
+}
+
+.message-output-content {
+	padding: 50px 10px;
+	border: 1px solid black;
+	line-height: 20px;
+}
+
+.input-group {
+	display: flex;
+	margin-bottom: 1rem;
+}
+
+.label {
+	flex: 1; /* lebar kolom label */
+}
+
+.textbox {
+	flex: 3; /* lebar kolom textbox */
+}
+
+/* styling textbox */
+input:not([type="radio"]), textarea {
+	border: 2px solid lightgray;
+	width: 100%;
+	border-radius: .3rem;
+	padding: .3rem;
+	flex: 3;
+}
+
+.submit {
+	cursor: pointer;
+}
+
+footer {
+	background: #efcfca;
+	padding: 20px;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.footer {
+	display: flex;
+	/* justify-content: flex-end; */
+}
+
+.footer-p {
+	margin-left: auto;
+}
+
+@media only screen and (min-width: 300px) {
+	.message {
+		display: flex;
+		flex-direction: column;
+		padding: 40px;
+		justify-content: space-evenly;
+		align-items: center;
+		gap: 100px;
+	}
+}
+
+@media (min-width: 900px) {
+	.message {
+		display: flex;
+		padding: 40px;
+		justify-content: space-evenly;
+		align-items: center;
+		gap: 100px;
+	}
+}

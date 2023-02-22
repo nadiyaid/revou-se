@@ -1,209 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Revou Software Engineer</title>
+    <title>Wedding Organizer | Home</title>
+    <link rel="icon" type="image/x-icon" href="assets/Logo.png" />
+
+    <link rel="stylesheet" href="css/index.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-    <link id="googleFonts" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800%7COpen+Sans:400,700,800&display=swap" rel="stylesheet" type="text/css">
 
-    <style>
-        body {
-            font-family: "Montserrat";
-        }
-        p, label {
-            font-size: .8rem;
-        }
-        .container {
-            border: 5px solid #ffcc5c;
-            display: flex;
-            justify-content: flex-end; /*flex end*/
-            padding: 0 3rem;
-        }
-
-        .container > div {
-            padding: 10px;
-            text-align: center;
-            font-size: 14sp;
-            color: #ffeead;
-            border: 2px solid;
-            background-color: green;
-        }
-
-        .logo {
-            margin-right: auto;
-        }
-
-        header {
-            padding: 0 5rem;
-            margin-bottom: 3rem;
-        }
-        header h1 {
-            margin: 3rem 0 0 0;
-            line-height: 1rem;
-        }
-
-        .content{
-            flex-direction: row;
-            display: flex;
-            margin-bottom: 5rem;
-            align-content: center;
-            justify-content: space-around;
-        }
-        /* form {
-            flex: 6;
-        }
-        table {
-            flex: 6;
-        } */
-        footer>p {
-            text-align: end;
-        }
-        .tabel, th, td {
-            border: 1px solid rgb(182, 182, 182);
-            border-collapse: collapse;
-            text-align: center;
-            padding: 10px;
-            font-size: .8rem;
-        }
-        th {
-            background-color: lightgrey;
-        }
-        .col-1 {
-            flex: 2;
-        }
-
-        .col-3 {
-            /* position: relative; */
-            flex: 4 auto;
-            width: 1%;
-            /* min-width: 0; */
-        }
-
-        .input-group {
-            display: flex;
-            flex-wrap: wrap;
-            margin-bottom: 1rem;
-            align-items: stretch;
-            width: 150%;
-        }
-        input[type="button"] {
-            width: 155%;
-        }
-        .input-group input[type="text"], input[type="date"], textarea {
-            width: 100%;
-            border: 2px solid lightgray;
-            border-radius: .3rem;
-            padding: .3rem;
-        }
-        input[type="button"] {
-            display: flex;
-            align-self: center;
-            justify-self: center
-        }
-    </style>
 </head>
-<body>
 
-    <nav class="container">
-        <img src="https://storage.googleapis.com/danacita-website-v3-prd/website_v3/images/Revou-alasan.original.png" class="logo" width="40" height="40" alt="">
-        <div class="home">Home</div>
-        <div class="search">Search</div>
-        <div class="logout">Logout</div>
-    </nav>
-
+<body id="page-top">
+    <a href="#page-top" class="btn-top">
+        <i class="bi bi-chevron-up"></i>
+    </a>
     <header>
-        <h1>Form Belajar</h1>
-        <p>Ini adalah latihan pertama</p>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img src="assets/Logo Transparent.png" alt="" width="60"></a>
+                <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">Our Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Potofolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#message">Message Us</a>
+                    </li>
+                </ul>
+            </div>
+          </nav>
     </header>
 
-    <main class="content">
-        <form action="" class="form">
-            <div class="input-group">
-                <label class="col-1">Nama</label> : &ThinSpace;
-                <div class="col-3">
-                    <input type="text" name="nama" placeholder="Nama">
-                </div>
-            </div>
-            <div class="input-group">
-                <label class="col-1">Tanggal Lahir</label> : &ThinSpace;
-                <div class="col-3">
-                    <input type="date" name="tgl" id="">
-                </div>
-            </div>
-            <div class="input-group">
-                <label class="col-1">Jenis Kelamin</label> : &ThinSpace;
-                <div class="col-3">
-                    <div>
-                        <input type="radio" name="Laki-laki" id="" value="Laki-laki">
-                        <label class="col-1" for="">Laki-laki</label>
+    <main>
+        <section id="hero">
+            <div class="container">
+                <div class="hero">
+                    <p class="hero-subtitle">Hi <span id="nama"></span></p>
+                    <p class="hero-subtitle">Welcome to our website</p>
+                    <div class="hero-title">
+                        <h1>Wedding Organizer</h1>
+                        <h5>Modern &bullet; Affordable &bullet; Trustworthy</h5>
                     </div>
-                    <div>
-                        <input type="radio" name="Perempuan" id="" value="Perempuan">
-                        <label class="col-1" for="">Perempuan</label>
-                    </div>
+                    
+                    <!-- <img src="assets/hero.jpg" alt="hero image" class="hero-img"> -->
                 </div>
             </div>
-            <div class="input-group">
-                <label class="col-1">Pesan</label>  : &ThinSpace;
-                <div class="col-3">
-                    <textarea name="pesan" id="" cols="30" rows="3" placeholder="Pesan"></textarea>
-                </div>
-            </div>
-            
-            <input type="button" value="Submit">
-        </form>
+        </section>
 
-        <table class="tabel">
-            <tr>
-                <th>Nama</th>
-                <th>Tanggal Lahir</th>
-                <th>Jenis Kelamin</th>
-                <th>Pesan</th>
-                <th>Profil</th>
-                <th>Hapus</th>
-            </tr>
-            <tr>
-                <td>Nadiya</td>
-                <td>1-1-1990</td>
-                <td>Perempuan</td>
-                <td>Belajar buat website</td>
-                <td><a href="#">Klik disini</a></td>
-                <td><i class="bi bi-trash"></i></td>
-            </tr>
-            <tr>
-                <td>Nadiya</td>
-                <td>1-1-1990</td>
-                <td>Perempuan</td>
-                <td>Belajar buat website</td>
-                <td><a href="#">Klik disini</a></td>
-                <td><i class="bi bi-trash-fill"></i></td>
-            </tr>
-            <tr>
-                <td>Nadiya</td>
-                <td>1-1-1990</td>
-                <td>Perempuan</td>
-                <td>Belajar buat website</td>
-                <td><a href="#">Klik disini</a></td>
-                <td><i class="bi bi-trash-fill"></i></td>
-            </tr>
-            <tr>
-                <td>Nadiya</td>
-                <td>1-1-1990</td>
-                <td>Perempuan</td>
-                <td>Belajar buat website</td>
-                <td><a href="#">Klik disini</a></td>
-                <td><i class="bi bi-trash-fill"></i></td>
-            </tr>
-        </table>
+        <section id="headquarter">
+            <div class="container">
+                <div class="head">
+                    <h2 class="headquarter-title">Our Headquarter</h2>
+                    <div class="row headquarter-gallery">
+                        <div class="col-lg-2 city">
+                            <img class="" src="assets/Jakarta.jpg" alt="Jakarta HQ">
+                            <h5>Jakarta</h5>
+                        </div>
+                        <div class="col-lg-2 city">
+                            <img class="" src="assets/Bandung.jpg" alt="Bandung HQ">
+                            <h5>Bandung</h5>
+                        </div>
+                        <div class="col-lg-2 city">
+                            <img class="" src="assets/Surabaya Cropped.jpg" alt="Surabaya HQ">
+                            <h5>Surabaya</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="message">
+            <div class="container">
+                <div class="message">
+                    <div class="message-input">
+                        <h2 class="message-title">Message Us</h2>
+                        <form class="message-form" name="message-form" onsubmit="return validateForm()">
+                            <div class="input-group">
+                                <label class="label">Nama</label> : &ThinSpace;
+                                <input type="text" name="name" placeholder="Nama">
+                            </div>
+                            <div class="input-group">
+                                <label class="label">Tanggal Lahir</label> : &ThinSpace;
+                                <input type="date" name="date">
+                            </div>
+                            <div class="input-group">
+                                <label class="label">Jenis Kelamin</label>: &ThinSpace;
+                                <div class="textbox">
+                                    <input type="radio" name="gender" id="male" value="Laki-laki">
+                                    <label class="label" for="male">Laki-laki</label>
+                                    <input type="radio" name="gender" id="female" value="Perempuan">
+                                    <label class="label" for="female">Perempuan</label>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <label class="label">Pesan</label> : &ThinSpace;
+                                <textarea name="message" cols="30" rows="3" placeholder="Pesan"></textarea>
+                            </div>
+                            <input type="submit" value="Submit" class="submit">
+                        </form>
+                    </div>
+                    <div class="message-output">
+                        <div class="message-output-content">
+                            <div class="input-group">
+                                <p class="label"><b>Current time</b></p>: &ThinSpace;
+                                <p class="textbox" id="dt"></p>
+                            </div>
+                            <div class="input-group">
+                                <p class="label"><b>Nama</b></p>: &ThinSpace;
+                                <p class="textbox" id="output-name"></p>
+                            </div>
+                            <div class="input-group">
+                                <p class="label"><b>Tanggal Lahir</b></p>: &ThinSpace;
+                                <p class="textbox" id="output-date"></p>
+                            </div>
+                            <div class="input-group">
+                                <p class="label"><b>Jenis Kelamin</b></p>: &ThinSpace;
+                                <p class="textbox" id="output-gender"></p>
+                            </div>
+                            <div class="input-group">
+                                <p class="label"><b>Pesan</b></p>: &ThinSpace;
+                                <p class="textbox" id="output-message"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <hr>
-
     <footer>
-        <p>Copyright&copy;2023</p>
+        <div class="container">
+            <div class="footer">
+                <p class="footer-p">Revou</p>
+            </div>
+        </div>
     </footer>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
