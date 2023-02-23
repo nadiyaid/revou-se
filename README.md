@@ -4,9 +4,7 @@ This repository contains HTML, CSS, and Javascript files to form a website of Co
 **Here are some screenshot of the website pages:**
 
 1. Home page
-<picture>
-  <img alt="Homepage" width="500" src="https://user-images.githubusercontent.com/78638536/220832614-97c44ace-28a0-49d3-80a1-67db2e8131d4.png">
-</picture>
+![Homepage](https://user-images.githubusercontent.com/78638536/220832614-97c44ace-28a0-49d3-80a1-67db2e8131d4.png)
 
 2. Profile page
 <picture>
